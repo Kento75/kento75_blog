@@ -20,8 +20,9 @@ from blog.views import BlogListView, BlogDetailView, BlogCreateView, BlogUpdateV
 
 
 urlpatterns = [
-    path('', BlogListView.as_view(), name='index'),             # 記事一覧画面
-    path('<int:pk>', BlogDetailView.as_view(), name='detail'),  # 記事詳細画面
-    path('create', BlogCreateView.as_view(), name='create'),    # 記事投稿画面
+    path('', BlogListView.as_view(), name='index'),                    # 記事一覧画面
+    path('<int:pk>/update', BlogUpdateView.as_view(), name='update'),  # 記事編集画面
+    path('<int:pk>', BlogDetailView.as_view(), name='detail'),         # 記事詳細画面
+    path('create', BlogCreateView.as_view(), name='create'),           # 記事投稿画面
     path('admin/', admin.site.urls),
 ]
