@@ -10,11 +10,13 @@ from .froms import BlogForm
 # 記事一覧画面
 class BlogListView(ListView):
     model = Blog
+    context_object_name = 'blogs'
 
 
 # 記事詳細画面
 class BlogDetailView(DetailView):
     model = Blog
+    context_object_name = 'blog'
 
 
 # 記事投稿画面
