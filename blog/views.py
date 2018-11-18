@@ -1,4 +1,5 @@
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
@@ -25,6 +26,14 @@ class BlogCreateView(CreateView):
     form_class = BlogForm
     success_url = reverse_lazy('index')  # トップページへ遷移
     template_name = 'blog/blog_create_form.html'
+
+    def form_valid(self, form):
+        messages.success(self.request, '保存しました')
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, '保存に失敗しました')
+        return super().form_invalid(form)
 
 
 # 記事編集画面

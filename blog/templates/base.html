@@ -57,6 +57,20 @@
 
 <!-- Main Content -->
 <div class="container">
+  {% if messages %}
+    <ul class="list-unstyled">
+      {% for message in messages %}
+        <li {% if message.tags %}
+          class="bg-{% if messages.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %} alert"{% endif %}>
+          {{ message }}
+          <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   {% block body %}{% endblock %}
 </div>
 
