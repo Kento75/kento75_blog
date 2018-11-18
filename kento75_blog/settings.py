@@ -55,7 +55,11 @@ ROOT_URLCONF = 'kento75_blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # アプリケーション単位でのテンプレート参照にするためコメントアウト
+            # os.path.normpath(os.path.join(BASE_DIR, 'templates')),
+        ],
+        # アプリケーション単位でのテンプレートを使用するためTrue
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

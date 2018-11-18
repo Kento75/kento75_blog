@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from blog.views import BlogListView, BlogDetailView
+from blog.views import BlogListView, BlogDetailView, BlogCreateView, BlogUpdateView
 
 
 urlpatterns = [
-    path('', BlogListView.as_view(), name='index'),     # 記事一覧画面
+    path('', BlogListView.as_view(), name='index'),             # 記事一覧画面
     path('<int:pk>', BlogDetailView.as_view(), name='detail'),  # 記事詳細画面
+    path('create', BlogCreateView.as_view(), name='create'),    # 記事投稿画面
     path('admin/', admin.site.urls),
 ]
