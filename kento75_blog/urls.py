@@ -28,6 +28,6 @@ urlpatterns = [
     path('<int:pk>', BlogDetailView.as_view(), name='detail'),         # 記事詳細画面
     path('create', BlogCreateView.as_view(), name='create'),           # 記事投稿画面
     path('login', LoginView.as_view(template_name='login.html'), name='login'),      # ログイン画面
-    path('logout', LogoutView.as_view(template_name='logout.html'), name='logout')
+    path('logout', LogoutView.as_view(template_name='logout.html'), name='logout'),  # ログアウト画面
     path('admin/', admin.site.urls),
 ]
