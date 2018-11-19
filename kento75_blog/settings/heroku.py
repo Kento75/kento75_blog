@@ -1,15 +1,18 @@
-
 from .common import *
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+import dj_database_url
 
-ALLOWED_HOSTS = []
+if os.environ.get('debug', False):
+    # SECURITY WARNING: don't run with debug turned on in production!
+    DEBUG = True
+else:
+    DEBUG = False
+
+ALLOWED_HOSTS = ['*']
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-    }
-}
+DATABASES['default'] = dj_database_url.config()
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
