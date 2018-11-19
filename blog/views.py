@@ -1,3 +1,5 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 from django.urls import reverse_lazy
 from django.contrib import messages
 
@@ -22,10 +24,11 @@ class BlogDetailView(DetailView):
 
 
 # 記事投稿画面
-class BlogCreateView(CreateView):
+class BlogCreateView(LoginRequiredMixin, CreateView):
     model = Blog
     form_class = BlogForm
     success_url = reverse_lazy('index')  # トップページへ遷移
+    login_url = '/login'
     template_name = 'blog/blog_create_form.html'
 
     def form_valid(self, form):
@@ -38,9 +41,10 @@ class BlogCreateView(CreateView):
 
 
 # 記事編集画面
-class BlogUpdateView(UpdateView):
+class BlogUpdateView(LoginRequiredMixin, UpdateView):
     model = Blog
     form_class = BlogForm
+    login_url = '/login'
     template_name = 'blog/blog_update_form.html'
 
     def get_success_url(self):
@@ -58,9 +62,10 @@ class BlogUpdateView(UpdateView):
 
 
 # 記事削除画面
-class BlogDeleteView(DeleteView):
+class BlogDeleteView(LoginRequiredMixin, DeleteView):
     model = Blog
     success_url = reverse_lazy('index')  # トップページへ遷移
+    login_url = '/login'
 
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, '削除しました')
