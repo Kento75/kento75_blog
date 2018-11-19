@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3d4383e-aecf-473e-abcd-b4fc82c4a79b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.txt" beforeDir="false" afterPath="$PROJECT_DIR$/package.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kento75_blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="26" />
           <entry key="md" value="2" />
-          <entry key="py" value="36" />
+          <entry key="py" value="37" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -40,7 +41,7 @@
           <entry key="HTML" value="26" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="36" />
+          <entry key="Python" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -50,7 +51,7 @@
           <entry key="gitignore" value="31" />
           <entry key="html" value="3078" />
           <entry key="md" value="227" />
-          <entry key="py" value="3632" />
+          <entry key="py" value="3633" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
@@ -60,21 +61,30 @@
           <entry key="HTML" value="3078" />
           <entry key="Markdown" value="222" />
           <entry key="PLAIN_TEXT" value="83" />
-          <entry key="Python" value="3632" />
+          <entry key="Python" value="3633" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kento75_blog/settings/heroku.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kento75_blog/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -113,7 +123,6 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_list.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_detail.html" />
         <option value="$PROJECT_DIR$/blog/templates/login.html" />
-        <option value="$PROJECT_DIR$/kento75_blog/settings.py" />
         <option value="$PROJECT_DIR$/blog/templates/logout.html" />
         <option value="$PROJECT_DIR$/.gitattributes" />
         <option value="$PROJECT_DIR$/LICENSE" />
@@ -129,6 +138,7 @@
         <option value="$PROJECT_DIR$/package.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/kento75_blog/wsgi.py" />
+        <option value="$PROJECT_DIR$/kento75_blog/settings.py" />
       </list>
     </option>
   </component>
@@ -154,12 +164,6 @@
               <item name="kento75_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="kento75_blog" type="462c0819:PsiDirectoryNode" />
               <item name="kento75_blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kento75_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kento75_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="kento75_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,8 +214,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2410148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2410148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,7 +227,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28313252" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28313252" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -380,7 +385,6 @@
     <entry file="file://$PROJECT_DIR$/kento75_blog/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/kento75_blog/settings.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -443,10 +447,17 @@
     <entry file="file://$PROJECT_DIR$/kento75_blog/settings/heroku.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kento75_blog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
