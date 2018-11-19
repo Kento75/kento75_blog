@@ -12,6 +12,7 @@ from .froms import BlogForm
 class BlogListView(ListView):
     model = Blog
     context_object_name = 'blogs'
+    paginate_by = 5  # 5件毎にページネーション
 
 
 # 記事詳細画面
