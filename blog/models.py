@@ -2,5 +2,6 @@ from django.db import models
 
 
 class Blog(models.Model):
-    content = models.CharField(max_length=140)
+    title = models.CharField(max_length=140)
+    content = models.TextField()
     posted_date = models.DateTimeField(auto_now_add=True)
